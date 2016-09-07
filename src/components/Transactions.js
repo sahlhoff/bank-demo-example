@@ -8,7 +8,7 @@ export default class Transactions extends Component {
 
     if(transactions.length > 0){
       return (
-        <div>
+        <div className="feed-container">
           {this._renderTransactions(transactions)}
         </div>
       );
@@ -31,9 +31,11 @@ export default class Transactions extends Component {
   _renderTransactions(transactions){
     return (
       <div>
-        {transactions.map((transaction, index) => {
-          return <p>{transaction.name}</p>
+        <ul>
+          {transactions.map((transaction, index) => {
+            return <li>{transaction.name}</li>
           })}
+        </ul>
       </div>
     )
 
