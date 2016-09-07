@@ -2,6 +2,9 @@ import React, {PropTypes, Component } from 'react';
 import { Router, Route } from 'react-router';
 import Transactions from './components/Transactions';
 
+import transactionData from './constants/transaction-data';
+import activityData from './constants/activity-data';
+
 export default class App extends Component {
   static propTypes = {
     history: PropTypes.object.isRequired
@@ -13,7 +16,7 @@ export default class App extends Component {
     return (
 
       <Router history={history}>
-        <Route path='/' component={Transactions}>
+        <Route path='/' transactions={transactionData} activities={activityData} component={Transactions}>
         </Route>
       </Router>
 
