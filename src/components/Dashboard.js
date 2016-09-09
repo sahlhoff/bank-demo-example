@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
+import styles from '../styles/styles';
+
+console.log(styles.finalContainer);
 
 export default class Dashboard extends Component {
 
   render(){
     return (
-      <div>
+      <div style={styles.finalBody}>
         <Navbar />
-        <div>
+        <div style={styles.finalContainer}>
           {this.props.children}
         </div>
       </div>

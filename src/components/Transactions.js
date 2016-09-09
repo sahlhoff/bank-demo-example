@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import Transaction from './Transaction';
+import styles from '../styles/styles';
+import moment from 'moment';
 
 export default class Transactions extends Component {
   
@@ -8,9 +10,7 @@ export default class Transactions extends Component {
 
     if(transactions.length > 0){
       return (
-        <div className="feed-container">
-          {this._renderTransactions(transactions)}
-        </div>
+        this._renderTransactions(transactions)
       );
     } else {
       return (
@@ -30,15 +30,12 @@ export default class Transactions extends Component {
 
   _renderTransactions(transactions){
     return (
-      <div>
-        <ul>
-          {transactions.map((transaction, index) => {
-            return <li>{transaction.name}</li>
-          })}
-        </ul>
-      </div>
-    )
-
+      <ul style={styles.finalTransactionFeed}>
+        {transactions.map((transaction, i) => {
+            return <Transaction transaction={transaction} />;
+        })}
+      </ul>
+    );
   }
 
 }
