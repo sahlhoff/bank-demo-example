@@ -15,10 +15,10 @@ const styles = reactCSS({
       display: 'flex',
       justifyContent: 'center',
       backgroundColor: '#fff',
-      borderRadius: '5px;',
-      marginBottom: '100px',
+      borderRadius: 5,
+      marginBottom: 100,
       width: '100%',
-      maxWidth: '600'
+      maxWidth: 600
     },
     finalTransactionFeed: {
       listStyle: 'none',
@@ -27,10 +27,38 @@ const styles = reactCSS({
       width: '100%'
     },
     finalTransactionFeedItem: {
-      padding: '25',
+      padding: 25,
       display: 'flex',
       justifyContent: 'space-between',
-      border: '1px dashed #eee'
+      alignItems: 'center',
+      border: '1px solid #eee',
+      cursor: 'pointer'
+    },
+    finalTransactionMeta: {
+      flex: 1,
+      marginLeft: 20
+    },
+    finalTransactionTitle: {
+      fontSize: 20
+    },
+    finalTransactionDate: {
+      color: '#999',
+      fontSize: 15
+    },
+    finalTransactionAmount: {
+      fontSize: 20
+    },
+    finalTransactionIcon: {
+      fontSize: 40,
+      padding: 10,
+      color: '#fff',
+      borderRadius: 5
+    },
+    positiveTransactions: {
+      color: 'rgb(146, 177, 129)'
+    },
+    negativeTransactions: {
+      color: 'rgb(214, 113, 113)'
     }
   },
   'hover': {

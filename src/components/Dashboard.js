@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import styles from '../styles/styles';
 
-console.log(styles.finalContainer);
-
 export default class Dashboard extends Component {
 
   render(){
@@ -16,7 +14,6 @@ export default class Dashboard extends Component {
       </div>
     );
 
-    
   }
   
 }

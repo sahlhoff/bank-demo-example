@@ -6,7 +6,7 @@ import moment from 'moment';
 export default class Transactions extends Component {
   
   render(){
-    const transactions = this.props.route.transactions;
+    const transactions = this.props.route.activities;
 
     if(transactions.length > 0){
       return (
@@ -24,7 +24,7 @@ export default class Transactions extends Component {
 
   _renderNoTransactions(){
     return (
-      <p>transactions component</p>
+      <p>You have no transactions.</p>
     );
   }
 
@@ -32,7 +32,7 @@ export default class Transactions extends Component {
     return (
       <ul style={styles.finalTransactionFeed}>
         {transactions.map((transaction, i) => {
-            return <Transaction transaction={transaction} />;
+          return <Transaction transaction={transaction} key={transaction.id} />;
         })}
       </ul>
     );
