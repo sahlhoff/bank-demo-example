@@ -38,19 +38,19 @@ export default class Transactions extends Component {
 
   _renderTransactions(transactions){
     return (
-      <div style={styles.finalTransactionFeedContainer}>
-        <div style={styles.finalTransactionSort}>
-          <div onClick={() => this._sort('name')} style={styles.finalTransactionSortItem}>
+      <div style={styles.bankTransactionFeedContainer}>
+        <div style={styles.bankTransactionSort}>
+          <div onClick={() => this._sort('name')} style={styles.bankTransactionSortItem}>
             TITLE
           </div>
-          <div onClick={() => this._sort('created_at')} style={styles.finalTransactionSortItem}>
+          <div onClick={() => this._sort('created_at')} style={styles.bankTransactionSortItem}>
             DATE
           </div>
-          <div onClick={() => this._sort('amount')} style={styles.finalTransactionSortItem}>
+          <div onClick={() => this._sort('amount')} style={styles.bankTransactionSortItem}>
             AMOUNT
           </div>
         </div>
-        <ul style={styles.finalTransactionFeed}>
+        <ul style={styles.bankTransactionFeed}>
           {transactions.map((transaction, i) => {
             return <Transaction transaction={transaction} key={transaction.id} />;
           })}

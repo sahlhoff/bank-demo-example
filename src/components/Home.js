@@ -16,31 +16,31 @@ export default class Home extends Component {
 
   render(){
     return (
-      <div style={styles.finalHomeContainer}>
-        <div style={styles.finalHomeAccountContainer}>
+      <div style={styles.bankHomeContainer}>
+        <div style={styles.bankHomeAccountContainer}>
           <div>
-            <div style={styles.finalHomeAccountBalance}>
+            <div style={styles.bankHomeAccountBalance}>
               {this.state.currentBalance}
             </div>
-            <div style={styles.finalHomeAccountSubTitle}>
+            <div style={styles.bankHomeAccountSubTitle}>
               Current Balance
             </div>
           </div>
           <div>
-            <div style={styles.finalHomeAccountCredit}>
+            <div style={styles.bankHomeAccountCredit}>
               {this.state.currentCredit}
             </div>
-            <div style={styles.finalHomeAccountSubTitle}>
+            <div style={styles.bankHomeAccountSubTitle}>
               Available Credit
             </div>
           </div>
         </div>
         <div>
-          <div style={styles.finalPageCTA}>
+          <div style={styles.bankPageCTA}>
             Recent Activity
           </div>
           {this._renderRecentTransactions()}
-          <div style={styles.finalPageCTA}>
+          <div style={styles.bankPageCTA}>
             <Link to={'/transactions'}>View More</Link>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default class Home extends Component {
     const recentTransactions = this.props.route.activities.slice(0, 5);
 
     return (
-      <ul style={styles.finalTransactionFeed}>
+      <ul style={styles.bankTransactionFeed}>
         {recentTransactions.map((transaction, i) => {
           return <Transaction transaction={transaction} key={transaction.id} />;
         })}

@@ -34,7 +34,7 @@ export default class TransactionIcon extends Component {
       icon = 'credit-card';
     }
 
-    iconStyle = {...styles.finalTransactionIcon, ...iconColor};
+    iconStyle = {...styles.bankTransactionIcon, ...iconColor};
 
     return <FontAwesome name={icon} style={iconStyle} />;
 

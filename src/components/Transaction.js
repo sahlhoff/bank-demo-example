@@ -11,19 +11,19 @@ export default class Transaction extends Component {
     let transaction = this.props.transaction;
 
     return (
-      <li style={styles.finalTransactionFeedItem} onClick={() => this._expandTransaction(transaction)}>
+      <li style={styles.bankTransactionFeedItem} onClick={() => this._expandTransaction(transaction)}>
         <div>
           <TransactionIcon transaction={transaction} />
         </div>
-        <div style={styles.finalTransactionMeta}>
-          <div style={styles.finalTransactionTitle}>
+        <div style={styles.bankTransactionMeta}>
+          <div style={styles.bankTransactionTitle}>
             {transaction.pending ? 'Pending': ''}{transaction.name}
           </div>
-          <div style={styles.finalTransactionDate}>
+          <div style={styles.bankTransactionDate}>
             {this._getTransactionTime(transaction.created_at)}
           </div>
         </div>
-        <div style={styles.finalTransactionAmount}>
+        <div style={styles.bankTransactionAmount}>
           <TransactionAmount amount={transaction.amount} />
         </div>
       </li>

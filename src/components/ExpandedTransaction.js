@@ -22,17 +22,17 @@ export default class ExpandedTransaction extends Component {
 
   render(){
     return (
-      <div style={styles.finalExpandedTransactionContainer}>
+      <div style={styles.bankExpandedTransactionContainer}>
         <div style={styles}>
           <TransactionIcon transaction={this.state.transaction} />
         </div>
-        <div style={styles.finalExpandedTransactionDate}>
+        <div style={styles.bankExpandedTransactionDate}>
           {this._getTransactionTime(this.state.transaction.created_at)}
         </div>
-        <div style={styles.finalExpandedTransactionAmount}>
+        <div style={styles.bankExpandedTransactionAmount}>
           <TransactionAmount amount={this.state.transaction.amount} />
         </div>
-        <div style={styles.finalExpandedTransactionTitle}>
+        <div style={styles.bankExpandedTransactionTitle}>
           {this.state.transaction.name}
         </div>
         <div onClick={() => {alert('Oops, this is not implemented ;(')}}>

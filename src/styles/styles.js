@@ -9,7 +9,7 @@ const styles = reactCSS({
       textDecoration: 'none',
       color: '#333'
     },
-    finalBody: {
+    bankBody: {
       backgroundColor: '#b8e4f7',
       display: 'flex',
       flexDirection: 'column',
@@ -17,13 +17,13 @@ const styles = reactCSS({
       height: '100%',
       minHeight: '800'
     },
-    finalNav: {
+    bankNav: {
       textAlign: 'center',
       backgroundColor: '#fff',
       width: '100%',
       fontSize: 20
     },
-    finalContainer: {
+    bankContainer: {
       display: 'flex',
       justifyContent: 'center',
       backgroundColor: '#fff',
@@ -31,48 +31,48 @@ const styles = reactCSS({
       width: '100%',
       maxWidth: 600
     },
-    finalPageCTA: {
+    bankPageCTA: {
       textAlign: 'center',
       color: '#999',
       padding: 5
     },
-    finalHomeContainer: {
+    bankHomeContainer: {
       width: '100%'
     },
-    finalHomeAccountContainer: {
+    bankHomeAccountContainer: {
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-between',
       textAlign: 'center',
       padding: 20
     },
-    finalHomeAccountBalance: {
+    bankHomeAccountBalance: {
       fontSize: 50,
       color: negativeColor
     },
-    finalHomeAccountCredit: {
+    bankHomeAccountCredit: {
       fontSize: 50,
       color: positiveColor
     },
-    finalTransactionFeedContainer: {
+    bankTransactionFeedContainer: {
       width: '100%'
     },
-    finalTransactionSort: {
+    bankTransactionSort: {
       display: 'flex',
       justifyContent: 'space-between',
       padding: 20,
       color: '#999'
     },
-    finalTransactionSortItem: { 
+    bankTransactionSortItem: { 
       cursor: 'pointer'
     },
-    finalTransactionFeed: {
+    bankTransactionFeed: {
       listStyle: 'none',
       margin: 0,
       padding: 0,
       width: '100%'
     },
-    finalTransactionFeedItem: {
+    bankTransactionFeedItem: {
       padding: 25,
       display: 'flex',
       justifyContent: 'space-between',
@@ -80,21 +80,21 @@ const styles = reactCSS({
       border: '1px solid #eee',
       cursor: 'pointer'
     },
-    finalTransactionMeta: {
+    bankTransactionMeta: {
       flex: 1,
       marginLeft: 20
     },
-    finalTransactionTitle: {
+    bankTransactionTitle: {
       fontSize: 20
     },
-    finalTransactionDate: {
+    bankTransactionDate: {
       color: '#999',
       fontSize: 15
     },
-    finalTransactionAmount: {
+    bankTransactionAmount: {
       fontSize: 20
     },
-    finalTransactionIcon: {
+    bankTransactionIcon: {
       fontSize: 40,
       padding: 10,
       color: '#fff',
@@ -106,7 +106,7 @@ const styles = reactCSS({
     negativeTransactions: {
       color: negativeColor
     },
-    finalExpandedTransactionContainer: {
+    bankExpandedTransactionContainer: {
       textAlign: 'center',
       padding: 20,
       minHeight: 400,
@@ -114,22 +114,22 @@ const styles = reactCSS({
       justifyContent: 'space-around',
       flexDirection: 'column'
     },
-    finalExpandedTransactionTitle: {
+    bankExpandedTransactionTitle: {
       fontSize: 40
     },
-    finalExpandedTransactionAmount: {
+    bankExpandedTransactionAmount: {
       fontSize: 60
     },
-    finalExpandedTransactionDate: {
+    bankExpandedTransactionDate: {
       fontSize: 20,
       color: '#999'
     },
-    finalExpandedTransaction:{
+    bankExpandedTransaction:{
       
     }
   },
   'hover': {
-    finalTransactionFeedItem: {
+    bankTransactionFeedItem: {
       backgroundColor: '#eee',
       cursor: 'pointer'
     }

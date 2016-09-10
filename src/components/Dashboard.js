@@ -6,9 +6,9 @@ export default class Dashboard extends Component {
 
   render(){
     return (
-      <div style={styles.finalBody}>
+      <div style={styles.bankBody}>
         <Navbar />
-        <div style={styles.finalContainer}>
+        <div style={styles.bankContainer}>
           {this.props.children}
         </div>
       </div>

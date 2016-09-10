@@ -1,7 +1,7 @@
 {
-  "name": "final-demo",
+  "name": "bank-demo",
   "version": "1.0.0",
-  "description": "final coding challenge",
+  "description": "bank coding challenge",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src"
