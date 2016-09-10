@@ -25,7 +25,7 @@ export default class App extends Component {
     return (
       <IntlProvider locale="en">
         <Router history={history}>
-          <Route path='/' transactions={transactionData} activities={activityData} component={Dashboard}>
+          <Route path='/' activities={activityData} component={Dashboard}>
             <IndexRoute component={Home} activities={activityData}/>
             <Route path='transactions' activities={activityData} component={Transactions}/>
             <Route path='transaction/:transactionId' component={ExpandedTransaction}/>
